@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="OpensixenClient" uid="OpensixenClient" id="product.opensixen.client.OpensixenClient" application="org.opensixen.clientGUI.OpensixenGUI" version="1.0.0" useFeatures="true" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-consoleLog</programArgs>
+      <vmArgs>-Dosgi.requiredJavaVersion=1.6 -XX:MaxPermSize=256m -Xms128m -Xmx512m -Declipse.ignoreApp=false -Dosgi.noShutdown=true</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <launcher name="opensixen">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="feature.opensixen.client" version="1.0.0.qualifier"/>
+   </features>
+
+
+</product>
